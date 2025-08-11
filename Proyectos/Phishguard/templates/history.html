@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Historial - PhishGuard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light py-4">
+  <div class="container">
+    <h2 class="mb-4 text-center">Historial de Análisis</h2>
+    <ul class="list-group">
+      {% for url, pred, ts in records %}
+        <li class="list-group-item d-flex justify-content-between">
+          <span>{{ url }}</span>
+          <small class="text-muted">{{ ts }}</small>
+          <span class="badge bg-{{ 'danger' if pred==1 else 'success' }}">
+            {{ 'Phishing' if pred==1 else 'Legítima' }}
+          </span>
+        </li>
+      {% endfor %}
+    </ul>
+    <div class="text-center mt-4">
+      <a href="/" class="btn btn-secondary">Volver</a>
+    </div>
+  </div>
+</body>
+</html>
